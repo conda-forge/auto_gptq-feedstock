@@ -1,15 +1,15 @@
 {% set name = "auto_gptq" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url:  https://github.com/PanQiWei/AutoGPTQ/archive/v{{ version }}.tar.gz
-  sha256: 580de955332cb06fca287ee137ea6aa15f56ce402485f01d6161b0a976b83cc5  # 0.6.0
+  url: https://github.com/PanQiWei/AutoGPTQ/archive/v{{ version }}.tar.gz
+  sha256: e43f6dcfe013edd31b565e19ec307d344bea1f3f115f4a8281646cee80697c54  # 0.6.0
   patches:
-      - patches/setup.patch
+    - patches/setup.patch
 build:
   # noarch: python
   script_env:
@@ -19,12 +19,11 @@ build:
     - TORCH_CUDA_ARCH_LIST=5.0;6.0;6.1;7.0;7.5;8.0;8.6;8.9;9.0+PTX  # [(cuda_compiler_version or "").startswith("12")]
     - BUILD_CUDA_EXT=0
   script: {{ PYTHON }} -m pip install . -vv --no-cache-dir auto-gptq=={{ version }}
-  number: 1
-  skip: True  # [cuda_compiler_version == "None"]
-  skip: True  # [osx or win]
+  number: 0
+  skip: true  # [cuda_compiler_version == "None"]
+  skip: true  # [osx or win]
   missing_dso_whitelist:
     - '*/libtorch_python.so'
-    
 requirements:
   build:
     - cmake
@@ -43,7 +42,7 @@ requirements:
     - gekko
     - pandas
     - numpy
-    
+
   run:
     - python
     - setuptools >=42
