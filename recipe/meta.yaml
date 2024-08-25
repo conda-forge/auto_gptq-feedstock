@@ -22,8 +22,7 @@ build:
   number: 1
   skip: true  # [cuda_compiler_version == "None"]
   skip: true  # [osx or win]
-  missing_dso_whitelist:
-    - '*/libtorch_python.so'
+
 requirements:
   build:
     - cmake
