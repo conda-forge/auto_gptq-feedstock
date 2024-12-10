@@ -20,8 +20,7 @@ build:
     - BUILD_CUDA_EXT=0
   script: {{ PYTHON }} -m pip install . -vv --no-cache-dir auto-gptq=={{ version }}
   number: 3
-  skip: true  # [cuda_compiler_version == "None"]
-  skip: true  # [osx or win]
+  skip: true  # [cuda_compiler_version == "None" or osx or win]
 
 requirements:
   build:
