@@ -109,7 +109,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-auto_gptq-green.svg)](https://anaconda.org/conda-forge/auto_gptq) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/auto_gptq.svg)](https://anaconda.org/conda-forge/auto_gptq) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/auto_gptq.svg)](https://anaconda.org/conda-forge/auto_gptq) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/auto_gptq.svg)](https://anaconda.org/conda-forge/auto_gptq) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-auto__gptq-green.svg)](https://anaconda.org/conda-forge/auto_gptq) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/auto_gptq.svg)](https://anaconda.org/conda-forge/auto_gptq) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/auto_gptq.svg)](https://anaconda.org/conda-forge/auto_gptq) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/auto_gptq.svg)](https://anaconda.org/conda-forge/auto_gptq) |
 
 Installing auto_gptq
 ====================
