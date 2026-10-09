@@ -1,7 +1,7 @@
 About auto_gptq-feedstock
 =========================
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/auto_gptq-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ag-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/PanQiWei/AutoGPTQ
 
@@ -16,8 +16,8 @@ Current build status
 <table><tr>
     <td>GitHub Actions</td>
     <td>
-      <a href="https://github.com/conda-forge/auto_gptq-feedstock/actions/workflows/conda-build.yml">
-        <img src="https://github.com/conda-forge/auto_gptq-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      <a href="https://github.com/conda-forge/ag-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/ag-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `auto_gptq` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install auto_gptq
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install auto_gptq
 ```
 
-It is possible to list all of the versions of `auto_gptq` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add auto_gptq
+# for installing globally
+pixi global install auto_gptq
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `auto_gptq` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search auto_gptq --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search auto_gptq --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search auto_gptq --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds auto_gptq --channel conda-forge
 # List dependencies of `auto_gptq`:
 mamba repoquery depends auto_gptq --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
